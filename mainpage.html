@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo"><br>
+                <p><h6>For events as unique as you</h6></p>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="mainpage.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    
+                </ul>
+            </div>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div> 
+   </header>
+   <!--Hero Section-->
+    <div class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <span class="s2">&nbsp;&nbsp;New Event Alert!!</span> 
+                <h1>&nbsp;&nbsp;Ganesha Chaturthi 2021</h1>
+                <em><p class="p1">&nbsp;Save the date September 10th!!</p>
+                <p class="p2">&nbsp;Attend the event and make it a grand success</p></em>
+                <div class="countdownBx">
+                    <h2>Countdown to Event<br><br></h2>
+                    <h4>Event Starts In!!!</h4>
+                    <div class="countdown">
+                        <div id="day" class="d"></div>
+                        <div id="hour" class="h"></div>
+                        <div id="minute" class="m"></div>
+                        <div id="seconds" class="s"></div>
+                    </div>
+                </div>
+                <a href="registrationpage.html"><button class="btn">Book Your Tickets &#8658;</button></a>
+            </div>
+        </div>
+    </div>
+    <!--Scrolling Text Section-->
+    <marquee class="m1" behavior="alternate"><p>The event starts at 8 am. Person without mask will not be allowed inside. Practise Social Distancing</p></marquee>
+    <!--Footer Section-->
+    <footer>
+        <div class="container wrap">
+            <div class="row">
+                <div class="column">
+                    <div class="footer-widget about-widget">
+                        <h2 class="widget-title">About</h2>
+
+                        <p class="p">A goal without a plan is just a wish. We plan for your goals so that you can happily fulfill your dreams.</p>
+                        <div class="cards">
+                            <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                            <a href="#"><i class="fab fa-cc-amex"></i></a>
+                            <a href="#"><i class="fab fa-cc-visa"></i></a>
+                            <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                            <a href="#"><i class="fab fa-google-pay"></i></a>
+                        </div>
+                        <p class="s1"><i class="fas fa-lock"></i><span class="s1">Secure Online Payment</span></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-widget information-widget">
+                        <h2 class="widget-title">Information</h2>
+                        <ul>
+                            <li class="l1"><a href="#">About Us</a></li>
+                            <li class="l2"><a href="#">Contact Us</a></li>
+                            <li class="l3"><a href="#">Terms & Conditions</a></li>
+                            <li class="l4"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="footer-widget contact-widget">
+                        <h2 class="widget-title">Contact</h2>
+                        
+                        <div class="contact-address">
+                            <p class="p1"><i class="fas fa-map-marker-alt"></i> Address : Bangalore,India.<br>&emsp;Pin-Code : 560076</p>
+                        </div>
+                        <div class="contact-number">
+                            <i class="fas fa-phone-square-alt"></i> Phone : +91 8792823161
+                        </div>
+                        <div class="contact-email">
+                            <i class="fas fa-envelope"></i> Email : vp14032001@gmail.com
+                        </div>
+                        <div class="social-widget">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                    All Rights Reserved | Design made by Vishwas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="countdown.js"></script>
+    <script>
+        var menuList = document.getElementById("menuList");
+        
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if( menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "600px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+    </script>
+</body>
+</html>

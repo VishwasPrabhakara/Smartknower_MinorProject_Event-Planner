@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Cardo&family=Montserrat:wght@300&family=Work+Sans&family=Yatra+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Header Design*/
+header{
+    width: 100%;
+    background-color: #281d45a8;
+    height: 100px;
+}
+header p,h6{
+    font-size: smaller;
+    margin-left: -40px;
+    text-transform: uppercase;
+    color: #b9fa07;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu-icon{
+    width: 25px;
+    margin-top: 5%;
+    margin-left: 45%;
+    display: none;
+    position: fixed;
+}
+.container{
+    width: 80%;
+    margin: 0% auto;
+}
+.logo{
+    display: table;
+    float: left;
+}
+.logo img{
+    width: 38%;
+    border: 2px solid black;
+    height: auto;
+    margin-top: 8px;
+    border-radius: 60%;
+}
+.menu{
+    float: right;
+    display: block;
+}
+.menu ul{
+    list-style: none;
+}
+.menu ul li{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu ul li a{
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 80px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.menu ul li a:hover{
+    background-color: rgba(176,216,14,1);
+    color: white;
+}
+/*Hero section design*/
+.banner{
+    background-image: linear-gradient(rgba(255,255,0,0.5),rgba(255,255,0,0.5)),url(heroimage.jpg);
+    width: 100%;
+    height: 80vh;
+}
+.banner-content{
+    color: #f50410;
+    width: 55%;
+    padding-top: 60px;
+}
+.banner-content span{
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: 'Cardo', serif;
+    margin-left: 10%;
+}
+
+.banner-content h1{
+    margin-left: -15%;
+    margin-bottom:  10px;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Alegreya SC', serif;
+}
+.banner-content .p1{
+    margin-left: 3%;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+    color: #ff0000;
+    font-style: italic;
+}
+.banner-content .p2{
+    margin-left: -7%;
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Work Sans',sans-serif;
+    color: #ff0000;
+    font-style: italic;
+}
+.banner-content a{
+    text-decoration: none;
+    margin: 0% auto;
+}
+
+.banner-content .btn {background-image: linear-gradient(to right, #C04848 0%, #480048  51%, #C04848  100%)}
+.banner-content .btn{
+   margin-left: 10%;
+   align-content: center;
+   padding: 10px 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: rgb(236, 219, 219);            
+   box-shadow: 0 0 10px #000;
+   border-radius: 10px;
+   display: block;
+ }
+
+.banner-content .btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: rgb(27, 162, 216);
+   text-decoration: none;
+ }
+/*Countdown  Clock Design*/
+footer .container{
+    width: 100%;
+}
+.container .countdownBx{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   width: 300px;
+}
+.countdown,.m,.d,.s,.h{
+    border: 2px solid black;
+}
+.container .countdownBx h2{
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 20px;
+}
+.banner-content h4{
+    font-family: 'Montserrat',sans-serif;
+    font-style: italic;
+}
+.container .countdownBx .countdown{
+    margin-top: 30px;
+    background: rgba(247, 3, 3, 0.808);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container .countdownBx .countdown div{
+    position: relative;
+    width: 100px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px 15px;
+    margin-top: -25px;
+}
+.container .countdownBx .countdown div::before{
+    content: 'text';
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    color: black;
+    font-size: 0.35em;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.container .countdownBx .countdown div#day::before{
+    content: 'Days';
+}
+.container .countdownBx .countdown div#hour::before{
+    content: 'Hours';
+}
+.container .countdownBx .countdown div#minute::before{
+    content: 'Minutes';
+}
+.container .countdownBx .countdown div#seconds::before{
+    content: 'Seconds';
+}
+/*Footer Design*/
+footer{
+  background-color: #281d45a8;  
+  color: #000;
+  height: 40vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.column{
+    width: 25%;
+    display: table-cell;
+    padding: 10px;
+    text-align: center;
+}
+.footer-widget{ 
+  margin: 0 10px;
+  text-align: justify;
+}
+.widget-title{
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase; 
+}
+.about-widget{
+    line-height: 20px;
+    margin: 10px 0 30px 0;
+}
+.cards{
+    display: inline-block;
+    font-size: 30px;
+    margin-right: 12px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.cards a{
+    text-decoration: none;
+}
+.cards a:hover{
+    color: rgba(176,216,14,1)
+}
+.s1{
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.about-widget p{
+    margin-right: 10px;
+}
+.information-widget{
+    margin-left: 50px;
+}
+.footer-widget ul{
+    margin-left: 20px;
+}
+.footer-widget ul li{
+    padding-bottom: 14px;
+    list-style-type:square;
+}
+.footer-widget ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+.footer-widget ul li a:hover{
+    color: rgba(176,216,14,1);
+    font-weight: bolder;
+    margin-left: 10px;
+    transition: all 0.25s ease;
+}
+.contact-address{
+    padding-bottom: 5px;
+    border-bottom: 4px solid red;
+    line-height: 20px;
+}
+.contact-address p1{
+    letter-spacing: .5px;
+}
+.contact-number,.contact-email{
+    margin: 10px 0;
+}
+.contact-address i,.contact-email i,.contact-email i{
+    margin-right: 10px;
+} 
+.social-widget{
+    display: inline-block;
+    font-size: 28px;
+    color: black;
+    margin-right: 10px;
+}
+.social-widget a:hover{
+    color: rgba(176,216,14,1);
+    transition: all 0.25s ease;
+}
+.copyright .container{
+    background-color: chocolate;
+    padding: 20px;
+}
+.copyright p{
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+.copyright p a{
+    text-decoration: none;
+    color: #d2d2d2;
+}
+/*Marquee Design*/
+.m1{
+    background-color: rgba(255, 0, 0, 0.9);
+    color: yellow;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Yatra One', cursive;
+    padding: 10px;
+}
+
+/*For making responsive*/
+@media only screen and (max-width: 1125px) {
+    .menu{
+        float: right;
+        display: block;
+        margin-top: -70px;
+    }
+    .menu ul li a{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 955px){
+    
+    header p,h6{
+        font-size: 10px;
+        margin-left: -70px;
+    }
+    .banner-content h1{
+        font-size: 32px;
+    }
+    .banner-content .btn{
+        margin-left: 12%;
+    }
+    .widget-title {
+        font-size: 20px;
+    }
+    .p{
+        width: 100%;
+    }
+    .about-widget p{
+        margin-left: 2px;
+    }
+    .cards{
+        font-size: 25px;
+    }
+    .s1{
+        font-size: 15px;
+    }
+    .p1{
+        font-size: 15px;
+    }
+    .contact-number{
+        font-size: 15px;
+    }
+    .contact-email{
+        font-size: 13px;
+    }
+    .column{
+        padding-right: 28px;
+    }
+    .contact-number, .contact-email {
+        margin: 10px 0;
+    }
+    .footer-widget{
+        margin: 10px 0px;
+    }
+}
+@media only screen and (max-width: 855px){
+    
+    .menu ul{
+        width: 100%;
+        top: 100px;
+        right: 78%;
+        left: 78%;
+        text-align: left;
+        background: linear-gradient(#ff54a2,#ff575a);
+        position: absolute;
+        z-index: 2;
+
+    }
+    .menu ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+    .m1{
+        font-size: 12px;
+    }
+    header p,h6{
+        font-size: 8px;
+        margin-left: -50px;
+    }
+    .banner-content h1{
+        font-size: 30px;
+    }
+    .logo img{
+        margin-left: -36px;
+        width: 40%;
+    }
+    .banner-content .btn{
+        margin-left: 12%;
+    }
+    .widget-title {
+        font-size: 18px;
+    }
+    .p{
+        width: 100%;
+    }
+    .about-widget p{
+        margin-left: 1px;
+    }
+    .cards{
+        font-size: 20px;
+    }
+    .s1{
+        font-size: 10px;
+    }
+    .p1{
+        font-size: 13px;
+    }
+    .contact-number{
+        font-size: 13px;
+    }
+    .contact-email{
+        font-size: x-small;
+    }
+    .column{
+        padding-right: 28px;
+    }
+    .contact-number, .contact-email {
+        margin: 10px 0;
+    }
+    .social-widget{
+        font-size: 26px
+    }
+    .footer-widget{
+        margin: 10px 0px;
+    }
+    .copyright .container p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 755px) {
+    .menu ul{
+        width: 100%;
+        top: 100px;
+        right: 0%;
+        left: 0%;
+        text-align: center;
+        background: linear-gradient(#ff54a2,#ff575a);
+        position: absolute;
+        z-index: 2;
+
+    }
+    .menu ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .menu-icon{
+        display: inline-block;
+    }
+    .m1{
+        font-size: 12px;
+    }
+    header p,h6{
+        font-size: 8px;
+        margin-left: -50px;
+    }
+    .banner-content h1{
+        font-size: 26px;
+    }
+    .banner-content .p1{
+        font-size: 13px;
+    }
+    .banner-content .p2{
+        font-size: 13px;
+    }
+    .logo img{
+        margin-left: -36px;
+        width: 40%;
+    }
+    .banner-content .btn{
+        margin-left: 12%;
+    }
+    .widget-title {
+        font-size: 18px;
+    }
+    .p{
+        width: 100%;
+    }
+    .about-widget p{
+        margin-left: 1px;
+    }
+    .cards{
+        font-size: 20px;
+    }
+    .s1{
+        font-size: 10px;
+    }
+    .p1{
+        font-size: 13px;
+    }
+    .contact-number{
+        font-size: 13px;
+    }
+    .contact-email{
+        font-size: x-small;
+    }
+    .column{
+        padding-right: 28px;
+    }
+    .contact-number, .contact-email {
+        margin: 10px 0;
+    }
+    .social-widget{
+        font-size: 26px
+    }
+    .footer-widget{
+        margin: 10px 0px;
+    }
+    .copyright .container p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .menu ul{
+        width: 100%;
+        top: 100px;
+        right: 0%;
+        left: 0%;
+        text-align: center;
+        background: linear-gradient(#ff54a2,#ff575a);
+        position: absolute;
+        z-index: 2;
+
+    }
+    .menu ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .banner-content{
+        width: 100%;
+        margin-left: 30%;
+        align-content: center;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .menu-icon{
+        display: inline-block;
+        margin-left: 35%;
+    }
+    .m1{
+        font-size: 8px;
+    }
+    .banner-content .s2{
+        margin-left: 15%;
+        font-size: 15px;
+    }
+    header p,h6{
+        font-size: 8px;
+        margin-left: -50px;
+    }
+    .banner-content h1{
+        font-size: 26px;
+        margin-left: -5%;
+    }
+    .banner-content .p1{
+        font-size: 10px;
+        margin-left: 43px;
+        font-weight: bold;
+    }
+    .banner-content .p2{
+        font-size: 10px;
+        margin-left: 2%;
+        font-weight: bold;
+    }
+    .banner-content .countdownBx h2{
+        margin-left: -15%;
+        font-size: 16px;
+    }
+    .banner-content .countdownBx h4{
+        margin-left: -15%;
+        font-size: 15px;
+    }
+    .column{
+        width: 80%;
+        display: block;
+        text-align: center;
+        margin-left: 25%;
+
+    }
+    footer{
+        background-color: #281d45a8;
+        height: 120vh;
+    }
+    .column .about-widget{
+        width: 60%;
+        text-align: center;
+    }
+    
+    .column .information-widget{
+        width: 60%;
+        text-align: center;
+    }
+    .information-widget ul .l1{
+        text-indent: -70%;
+    }
+    .information-widget ul .l2{
+        text-indent: -66%;
+    }
+    .information-widget ul .l3{
+        text-indent: -40%;
+    }
+    .information-widget ul .l4{
+        text-indent: -60%;
+    }
+    .contact-widget .widget-title{
+        margin-left: 18%;
+    }
+    .countdownBx .countdown{
+        margin-left: -15%;
+    }
+    .logo img{
+        margin-left: -36px;
+        width: 40%;
+    }
+    .banner-content .btn{
+        margin-left: 10%;
+    }
+    .widget-title {
+        font-size: 18px;
+    }
+    .p{
+        width: 100%;
+    }
+    .about-widget p{
+        margin-left: 1px;
+    }
+    .cards{
+        font-size: 20px;
+    }
+    .s1{
+        font-size: 10px;
+    }
+    .p1{
+        font-size: 13px;
+    }
+    .contact-number{
+        font-size: 13px;
+    }
+    .contact-email{
+        font-size: x-small;
+    }
+    .column{
+        padding-right: 28px;
+    }
+    .contact-number, .contact-email {
+        margin: 10px 0;
+    }
+    .social-widget{
+        font-size: 26px
+    }
+    .footer-widget{
+        margin: 10px 0px;
+    }
+    .copyright .container p{
+        font-size: 15px;
+    }
+}

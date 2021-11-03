@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration For Event</title>
+    <link rel="stylesheet" href="registrationpage.css">
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="contactus.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</head>
+<body>
+  
+   <!--Header Section-->
+   <header>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo"><br>
+            <p><h6>For events as unique as you</h6></p>
+        </div>
+        <div class="menu">
+            <ul id="menuList">
+                <li><a href="mainpage.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contactus.html">CONTACT</a></li>
+                
+            </ul>
+        </div>
+        <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+    </div> 
+</header>
+<!--Heading-->
+<div class="abt-s" id="about">
+    <div class="container">
+        <h1 class="abt1">Online Reservation</h1>
+        <h2 class="abt-s"> <center> Book Your tickets before its too late!!</center></h2>
+        
+    </div>
+</div>
+<br>
+<!--Registration Form Section-->
+<div class="container1">
+    <div class="container-time">
+    <h2 class="heading">Ganesha Chaturthi 2021</h2>
+    <h3 class="heading-days">September 10,2021</h3>
+    
+    <p class="four">Venue: Kssem College<br>
+    Timings: 8:00 AM-10:00 PM</p>
+    <hr>
+    
+    <h4 class="heading-phone">For Any Queries in Booking<br>
+        Call Us: +91 8792823161</h4>
+        <p class="one">Price Per ticket :&nbsp;&nbsp;&nbsp;<i class="fas fa-rupee-sign"></i> <span id="ticket_price">500</span></p>
+        <p class="two">Booking fee : &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-rupee-sign"></i>10
+        <p class="three">Included in fee:&nbsp;T-shirt,Badge,Food</p>
+    
+    </div>
+    
+    <div class="container-form">
+    <form action="#">
+    <h2 class="heading heading-yellow">Reservation Online</h2>
+    
+    <form class="go-right" onsubmit="alert('Booking Confirmed!!! Have A Good Day')" autocomplete="off">
+        
+        <div>
+          <input id="name" name="name" type="text" required pattern="[A-Za-z ]{1,10}" maxlength="20" placeholder="Your Name">
+          <label for="name">Your Name</label>
+        </div>
+        <div>
+            <input id="email" name="email" type="email" required placeholder="Your Email">
+            <label for="name">Your Email</label>
+          </div>
+        <div>
+          <input id="phone" name="phone" type="tel" required pattern="[0-9]{1,10}" maxlength="10" placeholder="Phone Number">
+          <label for="phone">Phone Number</label>
+        </div>
+        <div>
+            <input id="num" name="tickets" type="number" required oninput="calc()" placeholder="Number Of Tickets">
+            <label for="name">Number Of Tickets</label>
+        </div>
+        <div>
+            <input id="size" name="size" type="text" required placeholder="Your T-shirt Size">
+            <label for="name">Your T-shirt Size</label>
+          </div>
+    
+    
+    
+    <div class="form-feild">
+        <p class="five">Subtotal :
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-rupee-sign"></i> <span id="total">0</span></b></p>
+    </div>
+    <div class="form-feild">
+        <p class="six">Total :
+        <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-rupee-sign"></i> <span id="subtotal">0</span></b></p>
+    </div>
+    <button type="submit" class="btn">Book</button>
+    </form>
+    </div>
+    </div>
+
+
+
+<!--Footer Section-->
+ <footer>
+    <div class="container wrap">
+        <div class="row">
+            <div class="column">
+                <div class="footer-widget about-widget">
+                    <h2 class="widget-title">About</h2>
+
+                    <p class="p">A goal without a plan is just a wish. We plan for your goals so that you can happily fulfill your dreams.</p>
+                    <div class="cards">
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                        <a href="#"><i class="fab fa-cc-amex"></i></a>
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="fab fa-google-pay"></i></a>
+                    </div>
+                    <p class="s1"><i class="fas fa-lock"></i><span class="s1">Secure Online Payment</span></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="footer-widget information-widget">
+                    <h2 class="widget-title">Information</h2>
+                    <ul>
+                        <li class="l1"><a href="#">About Us</a></li>
+                        <li class="l2"><a href="#">Contact Us</a></li>
+                        <li class="l3"><a href="#">Terms & Conditions</a></li>
+                        <li class="l4"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="column">
+                <div class="footer-widget contact-widget">
+                    <h2 class="widget-title">Contact</h2>
+                    
+                    <div class="contact-address">
+                        <p class="p1"><i class="fas fa-map-marker-alt"></i> Address : Bangalore,India.<br>&emsp;Pin-Code : 560076</p>
+                    </div>
+                    <div class="contact-number">
+                        <i class="fas fa-phone-square-alt"></i> Phone : +91 8792823161
+                    </div>
+                    <div class="contact-email">
+                        <i class="fas fa-envelope"></i> Email : vp14032001@gmail.com
+                    </div>
+                    <div class="social-widget">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                All Rights Reserved | Design made by Vishwas
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="contactus.js"></script>
+<script>
+    function calc() 
+{
+  var price = document.getElementById("ticket_price").innerHTML;
+  var noTickets = document.getElementById("num").value;
+  var total = parseFloat(price) * noTickets
+  var subtotal = total + 10;
+  if (!isNaN(total))
+    document.getElementById("total").innerHTML = total
+    document.getElementById("subtotal").innerHTML = subtotal;
+}
+</script>
+<script>
+  var menuList = document.getElementById("menuList");
+  
+  menuList.style.maxHeight = "0px";
+
+  function togglemenu(){
+      if( menuList.style.maxHeight == "0px"){
+          menuList.style.maxHeight = "600px";
+      }
+      else{
+          menuList.style.maxHeight = "0px";
+      }
+  }
+
+</script>
+</body>
+</html>

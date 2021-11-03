@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="gallery.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo"><br>
+                <p><h6>For events as unique as you</h6></p>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="mainpage.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    
+                </ul>
+            </div>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div> 
+   </header>
+    <!--About Us Section-->
+    <div class="abt-s" id="about">
+        <div class="container">
+            <h1 class="abt1">GALLERY</h1>
+            <h2 class="abt-s"><center>Images from Our Previous Events</center></h2>
+            
+        </div>
+    </div>
+    <br>
+   <!--Image Gallery-->
+   <div class="back">
+   <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <img src="1.jpg">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 8</div>
+      <img src="2.jpg">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 8</div>
+      <img src="3.jpeg">
+      
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="4.jpg">
+        
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="5.jpeg">
+       
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="6.jpeg">
+       
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="7.jpg">
+        
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="8.jpg">
+        
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+  </div>
+</div>
+ <!--Scrolling Text Section-->
+ <marquee class="m1" behavior="alternate"><p>The event starts at 8 am. Person without mask will not be allowed inside. Practise Social Distancing</p></marquee>
+  <script src="iamgeslider.js"></script>
+    <!--Footer Section-->
+    <footer>
+        <div class="container wrap">
+            <div class="row">
+                <div class="column">
+                    <div class="footer-widget about-widget">
+                        <h2 class="widget-title">About</h2>
+    
+                        <p class="p">A goal without a plan is just a wish. We plan for your goals so that you can happily fulfill your dreams.</p>
+                        <div class="cards">
+                            <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                            <a href="#"><i class="fab fa-cc-amex"></i></a>
+                            <a href="#"><i class="fab fa-cc-visa"></i></a>
+                            <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                            <a href="#"><i class="fab fa-google-pay"></i></a>
+                        </div>
+                        <p class="s1"><i class="fas fa-lock"></i><span class="s1">Secure Online Payment</span></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-widget information-widget">
+                        <h2 class="widget-title">Information</h2>
+                        <ul>
+                            <li class="l1"><a href="#">About Us</a></li>
+                            <li class="l2"><a href="#">Contact Us</a></li>
+                            <li class="l3"><a href="#">Terms & Conditions</a></li>
+                            <li class="l4"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="column">
+                    <div class="footer-widget contact-widget">
+                        <h2 class="widget-title">Contact</h2>
+                        
+                        <div class="contact-address">
+                            <p class="p1"><i class="fas fa-map-marker-alt"></i> Address : Bangalore,India.<br>&emsp;Pin-Code : 560076</p>
+                        </div>
+                        <div class="contact-number">
+                            <i class="fas fa-phone-square-alt"></i> Phone : +91 8792823161
+                        </div>
+                        <div class="contact-email">
+                            <i class="fas fa-envelope"></i> Email : vp14032001@gmail.com
+                        </div>
+                        <div class="social-widget">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square"></i></a>
+                            <a href="#"><i class="fab fa-youtube-square"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                    All Rights Reserved | Design made by Vishwas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="gallery.js"></script>
+    <script>
+        var menuList = document.getElementById("menuList");
+        
+        menuList.style.maxHeight = "0px";
+      
+        function togglemenu(){
+            if( menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "600px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+      
+      </script>
+      
+</body>
+</html>

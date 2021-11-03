@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <link rel="stylesheet" href="contactus.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+    
+</head>
+<body>
+    <!--Header Section-->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo"><br>
+                <p><h6>For events as unique as you</h6></p>
+            </div>
+            <div class="menu">
+                <ul id="menuList">
+                    <li><a href="mainpage.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contactus.html">CONTACT US</a></li>
+                    
+                </ul>
+            </div>
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </div> 
+   </header>
+   <!--About Us Section-->
+   <div class="abt-s" id="about">
+        <div class="container">
+            <h1 class="abt1">About Us</h1>
+            <p class="abtp">
+                We are organizing this event on behalf of our college KSSEM. We are a group of people who are commmitted to bring about a change in the society through our club "Rotract Club of KSSEM". 
+                We are keeping the society clean and also do social service by helping the needy. Our events include social cause with donations going to orphanage and child home from the fund collected from
+                the event tickets cost.  
+
+            </p>
+        </div>
+    </div>
+    <br>
+   <!--Contact Us Page-->
+    <div class="heading">   
+       <div class="heading1">
+        <h2>Have any Queries Suggestions or Feedback<br>contact us</h2>
+       </div>
+    </div> 
+    <div class="footer" id="contact">
+    <div class="container">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Our team is happy to answer your questions.<br>Fill out the form and we'll be in touch as soon as possible
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <p><i class="fas fa-location-arrow"></i> Hulimavu,Bangalore 560076</p>
+                    </div>
+                    <div class="information">
+                        
+                        <p><i class="fas fa-envelope"></i> vp14032001@gmail.com</p>
+                    </div>
+                    <div class="information">
+                        <p><i class="fas fa-phone-volume"></i> +91 9945502268</p>
+                    </div>
+                    <div class="information">
+                        <p><i class="fab fa-whatsapp"></i> +91 8792823161</p>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+                <form onsubmit="alert('Thanks for contacting us! Our Team will get back to you as soon as possilble')" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" required pattern="[A-Za-z ]{1,10}"/>
+                        <label for="">Fullname</label>
+                        <span>Fullname</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" required/>
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" required maxlength="10" pattern="[1-9]{1,10}"/>
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input" required></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+   <!--Scrolling Text Section-->
+   <marquee class="m1" behavior="alternate"><p>The event starts at 8 am. Person without mask will not be allowed inside. Practise Social Distancing</p></marquee>
+   <!--Footer Section-->
+   <footer>
+    <div class="container wrap">
+        <div class="row">
+            <div class="column">
+                <div class="footer-widget about-widget">
+                    <h2 class="widget-title">About</h2>
+
+                    <p class="p">A goal without a plan is just a wish. We plan for your goals so that you can happily fulfill your dreams.</p>
+                    <div class="cards">
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                        <a href="#"><i class="fab fa-cc-amex"></i></a>
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="fab fa-google-pay"></i></a>
+                    </div>
+                    <p class="s1"><i class="fas fa-lock"></i><span class="s1">Secure Online Payment</span></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="footer-widget information-widget">
+                    <h2 class="widget-title">Information</h2>
+                    <ul>
+                        <li class="l1"><a href="#">About Us</a></li>
+                        <li class="l2"><a href="#">Contact Us</a></li>
+                        <li class="l3"><a href="#">Terms & Conditions</a></li>
+                        <li class="l4"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="column">
+                <div class="footer-widget contact-widget">
+                    <h2 class="widget-title">Contact</h2>
+                    
+                    <div class="contact-address">
+                        <p class="p1"><i class="fas fa-map-marker-alt"></i> Address : Bangalore,India.<br>&emsp;Pin-Code : 560076</p>
+                    </div>
+                    <div class="contact-number">
+                        <i class="fas fa-phone-square-alt"></i> Phone : +91 8792823161
+                    </div>
+                    <div class="contact-email">
+                        <i class="fas fa-envelope"></i> Email : vp14032001@gmail.com
+                    </div>
+                    <div class="social-widget">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                All Rights Reserved | Design made by Vishwas
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="contactus.js"></script>
+<script>
+  var menuList = document.getElementById("menuList");
+  
+  menuList.style.maxHeight = "0px";
+
+  function togglemenu(){
+      if( menuList.style.maxHeight == "0px"){
+          menuList.style.maxHeight = "600px";
+      }
+      else{
+          menuList.style.maxHeight = "0px";
+      }
+  }
+
+</script>
+</body>
